@@ -8,7 +8,7 @@ create table IF NOT EXISTS main.attribute
             primary key,
     name        varchar,
     description varchar,
-    corelkey    integer
+    corel_key   integer
 );
 
 alter table main.attribute
