@@ -1,0 +1,17 @@
+spring:
+  liquibase:
+    default-schema: main
+    user: postgres
+    password: 123
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+    url: ${DB_URL}
+    driver-class-name: org.postgresql.Driver
+    enabled: true
+  datasource:
+    hikari:
+      jdbc-url: ${DB_URL}
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
